@@ -1,0 +1,28 @@
+#wrapper-bio {
+    display: flex;
+    justify-content: space-around;
+}
+
+#personal-bio {
+    padding: 10px;
+    border-style: solid;
+    border-width: thin;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+#personal-bio img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#about-font {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#about-name {
+    font-weight: 500;
+}
