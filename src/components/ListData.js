@@ -37,7 +37,7 @@ function ListData() {
       <div className="movies-container-box">
         {movies.map((item) => (
           <div className="movies-container">
-            <img src={IMG_API + item.poster_path} />
+            <img src={IMG_API + item.poster_path} alt="movie-poster" />
             <div className="movies-info">
               <p>Title : {item.title}</p>
               <p>Rating : {item.vote_average}</p>
