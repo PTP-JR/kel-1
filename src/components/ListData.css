@@ -1,7 +1,26 @@
+.movies-container-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
 .movies-container {
-    width: 200px;
+    width: 200px; 
+    padding: 1%;
+    margin: 0px 10px 0px 10px;
 }
 
 .movies-container img {
     max-width: 100%;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 28px;
+}
+
+input {
+    width: 400px;
 }

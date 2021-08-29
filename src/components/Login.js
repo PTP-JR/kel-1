@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-
+import { useHistory, Link } from 'react-router-dom';
+import './Login.css';
 
 function Login() {
     const history = useHistory()
@@ -37,29 +37,32 @@ function Login() {
 
     return (
         <div className="kotak-masuk">
-            <h1>Login</h1>
+            <h1>Welcome to The Movies</h1>
             <form>
-                <h1>Masuk Akun Anda</h1>
+                <h1>Login your Account</h1>
 
-                <label htmlFor="" className="label-left">Alamat Email</label><br />
-                <input 
-                    type="email" 
-                    name="email" 
-                    id="" 
-                    value={dataLogin.email}
-                    onChange={handleChange}
-                /><br />
+                <div className="label-left">
+                    <label htmlFor="" >Email Address</label><br />
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="" 
+                        value={dataLogin.email}
+                        onChange={handleChange}
+                    /><br />
 
-                <label htmlFor="" className="label-left">Kata Sandi</label><br />
-                <input 
-                    type="password" 
-                    name="password" 
-                    id="" 
-                    value={dataLogin.password}
-                    onChange={handleChange}
-                /><br />
+                    <label htmlFor="" >Password</label><br />
+                    <input 
+                        type="password" 
+                        name="password" 
+                        id="" 
+                        value={dataLogin.password}
+                        onChange={handleChange}
+                    /><br />
+                </div>
+               
+                <button onClick={handleSubmit} className="btn">Enter</button>
 
-                <button onClick={handleSubmit}>Masuk</button>
             </form>
         </div>
     )

@@ -13,7 +13,7 @@
 }
 
 #personal-bio img {
-    width: 100px;
+    width: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -27,6 +27,11 @@
     font-weight: 500;
 }
 
+.fw-normal {
+    text-align: center;
+}
+
+
 .kotak-masuk {
     text-align: center;
     display: flex;
@@ -36,14 +41,17 @@
 
 }
 
-.label-left {
-    text-align: left;
-}
-
 .link {
     display: flex;
     justify-content: space-between;
     padding: 0px 20px 0px 20px;
+    margin: 2%;
+}
+
+#link {
+    background-color: whitesmoke;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
 }
 
 footer {

@@ -1,7 +1,7 @@
 import { Route, Switch, Link } from 'react-router-dom';
 import './App.css';
 import About from './components/About';
-import Home from './components/Home';
+import SignUp from './components/SignUp';
 import Login from './components/Login';
 import ListData from './components/ListData';
 
@@ -12,12 +12,15 @@ function App() {
       {/* <Home /> */}
       
       <div className="link">
-        <Link to="/login" id="link">Login</Link>
+        <Link to="/sign-up" id="link">Sign Up</Link>
         <Link to="/about" id="link">About</Link>
         <Link to="/listData" id="link">List Data</Link>
       </div>
       
       <Switch>
+        <Route path="/sign-up">
+          <SignUp />
+        </Route>
         <Route exact path="/login">
           <Login />
         </Route>

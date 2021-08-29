@@ -30,7 +30,7 @@ function About() {
   return (
     <div id="wrapper">
       <div id="title">
-        <p class="fw-normal">
+        <p className="fw-normal">
           This website project is for final exam purpose. We are working to create a website
           that provide database about movies that can be used for looking up such an update about your favourite movies, ratings, details, and much more.
         </p>
