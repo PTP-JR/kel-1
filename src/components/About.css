@@ -30,6 +30,11 @@
 /*  Login */
 .kotak-masuk {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 0px 80px 0px;
+
 }
 
 .label-left {
@@ -40,4 +45,8 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 20px 0px 20px;
+}
+
+footer {
+    text-align: center;
 }
