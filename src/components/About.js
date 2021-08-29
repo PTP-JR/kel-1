@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./About.css";
-import aldi from "./aldi.jpg";
-import moly from "./moly.jpeg";
+import aldi from "../assets/aldi.jpg";
+import moly from "../assets/moly.jpeg";
+import harcen from "../assets/harcen.JPG";
 
 function About() {
   const [bio, setBio] = useState([
@@ -21,6 +22,7 @@ function About() {
       name: "Bagas Hary Cendekiawan",
       origin: "Temanggung",
       about: `"Graphic design and sports are my hobbies"`,
+      image: harcen,
     },
   ]);
 
