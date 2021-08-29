@@ -4,6 +4,7 @@ import aldi from "../assets/aldi.jpg";
 import moly from "../assets/moly.jpeg";
 import harcen from "../assets/harcen.JPG";
 
+
 function About() {
   const [bio, setBio] = useState([
     {
@@ -30,8 +31,8 @@ function About() {
     <div id="wrapper">
       <div id="title">
         <p class="fw-normal">
-          This is a project for final exam purpose, we tried to build a website
-          that provide database about movies
+          This website project is for final exam purpose. We are working to create a website
+          that provide database about movies that can be used for looking up such an update about your favourite movies, ratings, details, and much more.
         </p>
         <div id="wrapper-bio">
           {bio.map((item) => (

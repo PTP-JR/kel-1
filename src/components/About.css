@@ -27,7 +27,6 @@
     font-weight: 500;
 }
 
-/*  Login */
 .kotak-masuk {
     text-align: center;
     display: flex;
@@ -49,4 +48,5 @@
 
 footer {
     text-align: center;
+    font-weight: 500;
 }
