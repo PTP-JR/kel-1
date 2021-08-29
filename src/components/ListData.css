@@ -1,0 +1,7 @@
+.movies-container {
+    width: 200px;
+}
+
+.movies-container img {
+    max-width: 100%;
+}
