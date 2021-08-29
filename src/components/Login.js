@@ -35,6 +35,10 @@ function Login() {
         } 
     }
 
+    function validLogin(){
+        return (dataLogin.password.length > 0 && dataLogin.email.length > 0)
+    }
+
     return (
         <div className="kotak-masuk">
             <h1>Welcome to The Movies</h1>
@@ -61,7 +65,7 @@ function Login() {
                     /><br />
                 </div>
                
-                <button onClick={handleSubmit} className="btn">Enter</button>
+                <button onClick={handleSubmit} className="btn" disabled={!validLogin()}>Enter</button>
 
             </form>
         </div>

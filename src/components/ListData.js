@@ -44,7 +44,7 @@ function ListData() {
               <p>Release date : {item.release_date}</p>
             </div>
           </div>
-        ))}
+        ))};
       </div>
     </>
   );
