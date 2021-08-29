@@ -9,8 +9,6 @@ import ListData from './components/ListData';
 function App() {
   return (
     <>
-      {/* <Home /> */}
-      
       <div className="link">
         <Link to="/sign-up" id="link">Sign Up</Link>
         <Link to="/about" id="link">About</Link>
