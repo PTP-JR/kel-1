@@ -4,6 +4,7 @@ import About from './components/About';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
 import ListData from './components/ListData';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
