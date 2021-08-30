@@ -4,3 +4,19 @@ Footer{
   padding: 30px;
 }
 
+.link-navigasi{
+  color:white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.logo{
+  width: 75px;
+  height: 75px;
+}
+
+@media (max-width:600px) {
+  Footer{
+    font-size: 12px;
+  }
+}

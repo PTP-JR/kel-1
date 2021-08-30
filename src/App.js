@@ -3,25 +3,27 @@ import './App.css';
 import Main from './Main';
 import Logo from './assets/logo.png';
 import {Dropdown} from 'react-bootstrap';
-
+import {NavDropdown, Navbar, Container, Nav} from 'react-bootstrap';
 
 function App() {
 
   return (
     <>
-<div className="header-menu">
-<div className="header-img">
-        <img className="logo" src={Logo} alt="logo"/>
-        <h1>The Movies</h1>
-</div> 
 
-<div className="menu navbar-nav">
-        <ul className="nav-link">
-        <li Link to="/" className="link-navigasi nav-item" style={{ textDecoration: 'none' }}>Home</li>
-        <li Link to="/about" className="link-navigasi nav-item" style={{ textDecoration: 'none' }}>About</li>
-        <li Link to="/listData" className="link-navigasi nav-item" style={{ textDecoration: 'none' }}>List Data</li></ul>
-        </div>
-</div> 
+<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <Container>
+    <img src={Logo} className="logo" alt="logo-situs"/>
+  <Navbar.Brand href="#home">The Movies</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="me-auto">
+    <Link to="/" className="link-navigasi" style={{ textDecoration: 'none' }}>Home</Link>
+        <Link to="/about" className="link-navigasi" style={{ textDecoration: 'none' }}>About</Link>
+        <Link to="/listData" className="link-navigasi" style={{ textDecoration: 'none' }}>List Data</Link>
+    </Nav>
+  </Navbar.Collapse>
+  </Container>
+</Navbar>
 
       
      
