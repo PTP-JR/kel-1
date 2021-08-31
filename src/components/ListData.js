@@ -39,6 +39,7 @@ function ListData() {
     <div className="list-data">
 
     <div className="section-2"></div>
+    <div className="judul">
     <h2>New Release</h2>
         <form onSubmit={handleOnSubmit}>
           <input
@@ -49,6 +50,7 @@ function ListData() {
             onChange={handleOnChange}
           />
         </form>
+        </div>
       <div className="movies-container-box">
         {movies.map((item) => (
           <div className="movies-container">
