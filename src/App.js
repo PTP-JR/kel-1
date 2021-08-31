@@ -3,7 +3,7 @@ import './App.css';
 import Main from './Main';
 import Logo from './assets/logo.png';
 import {Dropdown} from 'react-bootstrap';
-import {NavDropdown, Navbar, Container, Nav} from 'react-bootstrap';
+import {NavDropdown, Button, Navbar, Container, Nav} from 'react-bootstrap';
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
     <Nav className="me-auto">
     <Link to="/" className="link-navigasi" style={{ textDecoration: 'none' }}>Home</Link>
         <Link to="/about" className="link-navigasi" style={{ textDecoration: 'none' }}>About</Link>
-        <Link to="/listData" className="link-navigasi" style={{ textDecoration: 'none' }}>List Data</Link>
+        <Link to="/login" className="link-navigasi login-header" style={{ textDecoration: 'none' }}>Login</Link>
     </Nav>
   </Navbar.Collapse>
   </Container>

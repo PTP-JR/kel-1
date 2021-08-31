@@ -23,8 +23,23 @@ function ListData() {
   }, []);
 
   return (
-    <>
-      <header>
+    <div className="list-data">
+      <div className="video-baby-boss">
+      <iframe
+      src="https://www.youtube.com/embed/EWizz52lZvw" className="responsive-iframe" title="YouTube video player" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div className="video-title">
+<div>
+{}
+
+</div>
+
+    </div>
+  <section className="sub-movie">
+    <h2>List Film Terbaru</h2>
+<div className="list-movie">
         <div className="search">
           <input
             type="text"
@@ -33,7 +48,7 @@ function ListData() {
             value={setMovies}
           />
         </div>
-      </header>
+
       <div className="movies-container-box">
         {movies.map((item) => (
           <div className="movies-container">
@@ -46,7 +61,9 @@ function ListData() {
           </div>
         ))};
       </div>
-    </>
+      </div>
+      </section>
+    </div>
   );
 }
 
