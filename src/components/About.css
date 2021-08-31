@@ -35,12 +35,12 @@ border-radius: 50%;
 
     width: 100%;
     margin: auto;
-    background-color:black;
+    background-color:white;
     
 }
 
 .wrapper{
-    background: black;
+    background-color: white;
 }
 
 .carousel-item{
