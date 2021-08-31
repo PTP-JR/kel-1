@@ -36,15 +36,36 @@ function ListData() {
   };
 
   return (
-    <div className="list-data">
-      <div className="the-baby-boss">
-    
+    <>
 
-      </div>
+    <section className="video">
+    <div className="video-trailer">
+    <iframe width="560" height="315" className="responsive-iframe" src="https://www.youtube.com/embed/EWizz52lZvw" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <section className="deskripsi-video">
+      <h2>The Baby Boss</h2>
+      <h4>Genre: Family</h4>
+     <dix className="social-share">
+       <p>Share This: </p>
+     <a href="#" class="fa fa-facebook"></a>
+     <a href="#" class="fa fa-instagram"></a>
+     <a href="#" class="fa fa-twitter"></a>
+     <a href="#" class="fa fa-linkedin"></a>
+     </dix>
+      <p>Overview: The Templeton brothers — Tim and his Boss Baby little bro Ted — 
+        have become adults and drifted away from each other. But a new boss baby with
+         a cutting-edge approach and a can-do attitude is about to bring them together 
+         again … and inspire a new family business.</p>
 
-    <div className="section-2"></div>
-    <div className="judul">
-    <h2>New Release</h2>
+    </section>
+
+
+
+    </section>
+      <section className="fungsi-search">
+        <h1>New Release</h1>
         <form onSubmit={handleOnSubmit}>
           <input
             type="text"
@@ -54,11 +75,11 @@ function ListData() {
             onChange={handleOnChange}
           />
         </form>
-        </div>
+      </section >
       <div className="movies-container-box">
         {movies.map((item) => (
           <div className="movies-container">
-            <img src={IMG_API + item.poster_path} alt="movies-poster" />
+            <img src={IMG_API + item.poster_path} />
             <div className="movies-info">
               <div className="movies-name">
                 <div>
@@ -77,8 +98,7 @@ function ListData() {
           </div>
         ))}
       </div>
-      </div>
-  
+    </>
   );
 }
 

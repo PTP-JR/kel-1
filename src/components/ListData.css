@@ -5,17 +5,15 @@
     border-radius: 3%;
 }
 
-.list-data {
-    padding-bottom: 50px;
-    width: 100% !important;
-}
+
 
 .movies-container-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
-    padding: 20px;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .movies-container {
@@ -25,8 +23,8 @@
     margin: 10px 10px 0px 10px;
     position: relative;
     overflow: hidden;
-    /* border-style: solid; 
-     border-width: thin; */
+    /* border-style: solid; */
+    /* border-width: thin; */
 }
 
 .movies-name {
@@ -34,9 +32,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    /* border-style: solid; */
+    /* border-style: solid;
     border-width: thin;
-    border-color: white; 
+    border-color: white; */
 }
 
 .movies-name p {
@@ -82,12 +80,71 @@ input {
     width: 60%;
 }
 
-.list-data{
-    background-color: white;
 
+
+  .list-data{
+      background-color: black;
+  }
+
+.fungsi-search{
+    padding-top: 30px;
 }
 
-.section-2{
-    text-align: right;
+.video-trailer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .deskripsi-video{
+      padding: 10px;
+
+      text-align: center;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+  }
+
+  .fa-instagram {
+    background: #8a3ab9;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
 }
 
+  .fa{
+    padding: 10px;
+    font-size: 10px;
+    margin: 5px 2px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%; 
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+  }
+
+  .social-share{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
