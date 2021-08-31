@@ -37,6 +37,10 @@ function ListData() {
 
   return (
     <div className="list-data">
+      <div className="the-baby-boss">
+    
+
+      </div>
 
     <div className="section-2"></div>
     <div className="judul">
@@ -56,9 +60,19 @@ function ListData() {
           <div className="movies-container">
             <img src={IMG_API + item.poster_path} alt="movies-poster" />
             <div className="movies-info">
-              <p>Title : {item.title}</p>
-              <p>Rating : {item.vote_average}</p>
-              <p>Release date : {item.release_date}</p>
+              <div className="movies-name">
+                <div>
+                  <p>{item.title}</p>
+                </div>
+                <div>
+                  <p>{item.vote_average}</p>
+                </div>
+              </div>
+              {/* <p>Release date : {item.release_date}</p> */}
+            </div>
+            <div className="movies-overview">
+              <h3>Overview :</h3>
+              <p>{item.overview}</p>
             </div>
           </div>
         ))}
