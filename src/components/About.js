@@ -37,7 +37,7 @@ function About() {
         <div id="wrapper-bio">
           {bio.map((item) => (
             <div id="personal-bio">
-              <img src={item.image} />
+              <img src={item.image} alt="author-bio" />
               <p id="about-name">{item.name} | {item.origin}</p>
               <p id="about-font">{item.about}</p>
             </div>
