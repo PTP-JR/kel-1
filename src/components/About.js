@@ -37,17 +37,19 @@ function About() {
       that provide database about movies that can be used for looking up such an update about your favourite movies, ratings, details, and much more.
     </p>
     </div>
-    <div id="wrapper">
-        <Carousel variant="dark">
+    <div className="wrapper">
+        <Carousel variant="dark" className="carousel">
           {bio.map((item) => (
-            <Carousel.Item>
+            <Carousel.Item className="carousel-item">
+              <section className="item">
             <img
-              className="d-block w-100"
+              className="carousel-image"
               src={item.image}
               alt="slide"
             />
               <h5>{item.name}</h5>
               <p>{item.about}</p>
+              </section>
           </Carousel.Item>
           ))}
           </Carousel>

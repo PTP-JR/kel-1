@@ -18,12 +18,40 @@
 }
 
 .title > p {
-    width: 50%;
+    width: 80%;
     margin: auto;
     font-size: 16px;
     padding: 20px;
 }
 
-.Carousel {
+.carousel-image{
+    margin: 20px;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+}
 
+.carousel{
+
+    width: 100%;
+    margin: auto;
+    background-color:black;
+    
+}
+
+.wrapper{
+    background: black;
+}
+
+.carousel-item{
+    padding: 50px;
+    text-align: center;
+color:black;
+    width: 50%;
+    height: 50%;
+}
+
+.item{
+    background-color: whitesmoke;
+    padding: 20px;
 }
