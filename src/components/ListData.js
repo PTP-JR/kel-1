@@ -36,8 +36,10 @@ function ListData() {
   };
 
   return (
-    <>
-      <header>
+    <div className="list-data">
+
+    <div className="section-2"></div>
+    <h2>New Release</h2>
         <form onSubmit={handleOnSubmit}>
           <input
             type="text"
@@ -47,11 +49,10 @@ function ListData() {
             onChange={handleOnChange}
           />
         </form>
-      </header>
       <div className="movies-container-box">
         {movies.map((item) => (
           <div className="movies-container">
-            <img src={IMG_API + item.poster_path} />
+            <img src={IMG_API + item.poster_path} alt="movies-poster" />
             <div className="movies-info">
               <p>Title : {item.title}</p>
               <p>Rating : {item.vote_average}</p>
@@ -60,7 +61,8 @@ function ListData() {
           </div>
         ))}
       </div>
-    </>
+      </div>
+  
   );
 }
 

@@ -1,65 +1,20 @@
-.list-data {
-    padding-bottom: 50px;
-    width: 100% !important;
+.movies-container-box{
+    width: 80%;
 
 }
 
-.movies-container-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
+.movies-container{
+    width: 30%;
+    height: ;
+
 }
 
-.movies-container {
-    color:white;
-    width: 200px; 
-    padding: 1%;
-    margin: 0px 10px 0px 10px;
+.movies-container>img {
+    width:100%;
 }
 
-.movies-container img {
-    max-width: 100%;
+.list-data{
+    background-color: white;
+
 }
 
-.search {
-    margin-top:20px;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 28px;
-    margin-bottom: 20px;
-}
-
-input {
-    width: 400px;
-}
-
-.video-baby-boss {
-    background-color: black;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%;
-  }
-  
-  .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .sub-movie > h2{
-    color:white;
-      width: 100%;
-      padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .list-data{
-      background-color: black;
-  }
