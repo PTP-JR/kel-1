@@ -3,7 +3,8 @@ import "./About.css";
 import aldi from "../assets/aldi.jpg";
 import moly from "../assets/moly.jpeg";
 import harcen from "../assets/harcen.JPG";
-
+import about from "../assets/about.jpg";
+import {Carousel} from "react-bootstrap";
 
 function About() {
   const [bio, setBio] = useState([
@@ -28,23 +29,30 @@ function About() {
   ]);
 
   return (
-    <div id="wrapper">
-      <div id="title">
-        <p className="fw-normal">
-          This website project is for final exam purpose. We are working to create a website
-          that provide database about movies that can be used for looking up such an update about your favourite movies, ratings, details, and much more.
-        </p>
-        <div id="wrapper-bio">
-          {bio.map((item) => (
-            <div id="personal-bio">
-              <img src={item.image} alt="author-bio" />
-              <p id="about-name">{item.name} | {item.origin}</p>
-              <p id="about-font">{item.about}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+    <div className="about">
+    <div className="title">
+    <h2>About</h2>
+    <p>
+      This website project is for final exam purpose. We are working to create a website
+      that provide database about movies that can be used for looking up such an update about your favourite movies, ratings, details, and much more.
+    </p>
     </div>
+    <div id="wrapper">
+        <Carousel variant="dark">
+          {bio.map((item) => (
+            <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={item.image}
+              alt="slide"
+            />
+              <h5>{item.name}</h5>
+              <p>{item.about}</p>
+          </Carousel.Item>
+          ))}
+          </Carousel>
+        </div>
+        </div>
   );
 }
 
