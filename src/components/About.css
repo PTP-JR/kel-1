@@ -43,15 +43,17 @@ border-radius: 50%;
     background-color: white;
 }
 
-.carousel-item{
+/* .carousel-item{
     padding: 50px;
     text-align: center;
-color:black;
+
+    color:black;
     width: 50%;
     height: 50%;
-}
+} */
 
 .item{
     background-color: whitesmoke;
     padding: 20px;
+    text-align: center  ;
 }
