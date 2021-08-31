@@ -6,8 +6,8 @@ function Login() {
     const history = useHistory()
     
     const [user, setUser] = useState({
-        email: '',
-        password: ''
+        email: 'kelompok1@gmail.com',
+        password: 'kelompok1'
     })
 
     const [dataLogin, setDataLogin] = useState({
@@ -28,7 +28,7 @@ function Login() {
 
         if(dataLogin.email === user.email){
             if(dataLogin.password === user.password){
-                history.push("/")
+                history.push("/listData")
             }
         } else {
             alert("Email dan Password Anda Salah")
