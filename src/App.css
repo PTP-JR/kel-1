@@ -21,6 +21,13 @@ Footer{
   height: 75px;
 }
 
+.nama-logo{
+  color:white;
+}
+.nama-logo:hover{
+  color: orange;
+}
+
 @media (max-width:600px) {
   Footer{
     font-size: 12px;
