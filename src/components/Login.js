@@ -43,12 +43,13 @@ function Login() {
         <div className="login-page">
                 
         <div className="kotak-masuk">
-            <h1>Welcome to The Movies</h1>
+            <div className="login-desc">
+            <h2>Welcome to The Movies</h2>
+            <p>Login to Your Account</p>
+            </div>
             <form>
-                <h1>Login your Account</h1>
-
                 <div className="label-left">
-                    <label htmlFor="" >Email Address</label><br />
+                    <label >Email Address:</label><br />
                     <input 
                         type="email" 
                         name="email" 
@@ -57,17 +58,16 @@ function Login() {
                         onChange={handleChange}
                     /><br />
 
-                    <label htmlFor="" >Password</label><br />
+                    <label htmlFor="" >Password:</label><br />
                     <input 
                         type="password" 
                         name="password" 
-                        id="" 
                         value={dataLogin.password}
                         onChange={handleChange}
                     /><br />
                 </div>
                
-                <button onClick={handleSubmit} className="btn" disabled={!validLogin()}>Enter</button>
+                <button onClick={handleSubmit} disabled={!validLogin()} className="btn-login">Enter</button>
                 <p>New User? <Link to="/sign-up">Sign Up</Link></p>
             </form>
         </div>
