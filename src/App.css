@@ -11,6 +11,11 @@ Footer{
   padding: 10px;
 }
 
+.link-navigasi:hover{
+  color:orange;
+  font-size: 18px;
+}
+
 .logo{
   width: 75px;
   height: 75px;
