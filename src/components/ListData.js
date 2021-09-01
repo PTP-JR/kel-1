@@ -28,7 +28,7 @@ function ListData() {
   const handleOnSubmit = (e) => {
     e.preventDefault();
 
-    setLoading(true)
+    setLoading(true);
     fetch(SEARCH_API + cari)
       .then((response) => response.json())
       .then((data) => {
@@ -68,22 +68,24 @@ function ListData() {
           </section>
 </section>
 
-      { loading ? <img src={loading3D} className="loading" alt="Loading 3D Anime" /> : (
-        // { loading ? <h1 className="loading">Menunggu...</h1> : (
+        {loading ? (
+          <img src={loading3D} className="loading" alt="Loading 3D Anime" />
+        ) : (
+          // { loading ? <h1 className="loading">Menunggu...</h1> : (
 
-        <>
-              <section className="fungsi-search">
-                <h2>New Release</h2>
-                <form onSubmit={handleOnSubmit}>
-                  <input
-                    type="text"
-                    placeholder="search"
-                    className="srch"
-                    value={cari}
-                    onChange={handleOnChange}
-                  />
-                </form>
-              </section >
+          <>
+            <section className="fungsi-search">
+              <h2>New Release</h2>
+              <form onSubmit={handleOnSubmit}>
+                <input
+                  type="text"
+                  placeholder="search"
+                  className="srch"
+                  value={cari}
+                  onChange={handleOnChange}
+                />
+              </form>
+            </section>
 
               <div className="movies-container-box">
                 {movies.map((item) => (
@@ -100,18 +102,24 @@ function ListData() {
                         </div>
                         {/* <p>Release date : {item.release_date}</p> */}
                       </div>
-                      <div className="movies-overview">
-                        <h3>Overview :</h3>
-                        <p>{item.overview}</p>
+                      <div>
+                        <p>{item.vote_average}</p>
                       </div>
+                    </div>
+                    {/* <p>Release date : {item.release_date}</p> */}
                   </div>
-                ))}
-              </div>
-              </>
-            )}
+                  <div className="movies-overview">
+                    <h3>Overview :</h3>
+                    <p>{item.overview}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-      
-      );
+          </>
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default ListData;
