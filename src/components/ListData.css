@@ -6,7 +6,6 @@
 }
 
 
-
 .movies-container-box {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -151,5 +150,9 @@ input {
 
   .loading {
     padding: 15%;
+    text-align: center;
+  }
+
+  .fungsi-search > h2 {
     text-align: center;
   }
