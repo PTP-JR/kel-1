@@ -70,7 +70,20 @@ font-size: 20px;
   
 .btn-login:disabled{
     background-color: #4848484d;
+    
 }
+
+.btn-login:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+
+  .btn-login:active{
+      color: white;
+      background-color: black;
+  }
+
+
 @media (max-width:800px) {
 
     .kotak-masuk{
