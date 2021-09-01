@@ -26,7 +26,7 @@ form {
     background-repeat: no-repeat;
     background-image: url("/src/assets/movies2.jpg");
     background-blend-mode: multiply;
-background-color: #666666;
+    background-color: #666666;
 }
 
 .kotak-masuk{
@@ -37,6 +37,7 @@ background-color: #666666;
     margin: auto;
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
 }
 
 .login-desc{
