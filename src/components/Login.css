@@ -5,6 +5,9 @@ input{
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 8px;
 }
 label{
     font-size: 18px;
