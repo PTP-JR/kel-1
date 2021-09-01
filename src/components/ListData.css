@@ -148,6 +148,7 @@ input {
       justify-content: center;
   }
 
-  .fungsi-search > h2 {
-      text-align: center;
+  .loading {
+    padding: 15%;
+    text-align: center;
   }
