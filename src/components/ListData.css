@@ -148,3 +148,8 @@ input {
       flex-direction: row;
       justify-content: center;
   }
+
+  .loading {
+    padding: 15%;
+    text-align: center;
+  }
