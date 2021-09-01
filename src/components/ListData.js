@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./ListData.css";
+import loading3D from '../assets/angry.gif';
 
 const GET_API =
   "https://api.themoviedb.org/3/discover/movie?api_key=1d29e799bb3728c10ef98df0f4ed823f&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate";
@@ -72,7 +73,8 @@ function ListData() {
           </section>
         </section>
 
-      { loading ? <h1 className="loading">Menunggu...</h1> : (
+      { loading ? <img src={loading3D} className="loading" alt="Loadong 3D Animed" /> : (
+        // { loading ? <h1 className="loading">Menunggu...</h1> : (
 
             <>
               <section className="fungsi-search">
