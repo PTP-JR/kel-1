@@ -41,6 +41,7 @@ function Login() {
 
     return (
         <div className="login-page">
+                
         <div className="kotak-masuk">
             <h1>Welcome to The Movies</h1>
             <form>
