@@ -13,7 +13,7 @@ function App() {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <img src={Logo} className="logo" alt="logo-situs"/>
-          <Navbar.Brand href="#home">The Movies</Navbar.Brand>
+          <Navbar.Brand href="#home"><Link to="/" className="nama-logo" style={{ textDecoration: 'none' }}>The Movies</Link></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
