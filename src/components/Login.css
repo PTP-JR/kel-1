@@ -1,22 +1,100 @@
-.btn {
-    width: 400px;
-    margin-top: 20px;
-    background-color: blue;
+input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 8px;
 }
-
-.sign-login {
-    margin-top: 20px;
-}
-
-.label-left {
-    text-align: left;
-    margin-top: 20px;
+label{
+    font-size: 18px;
 }
 
 form {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;  
+   align-items: center;
+}
+
+.login-page{
+    min-height: 100%;
+    padding: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/src/assets/movies2.jpg");
+    background-blend-mode: multiply;
+background-color: #666666;
+}
+
+.kotak-masuk{
+    padding: 20px;
+    width: 50%;
+    height: 70%;
+    background-color:	#f3f3f3;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-desc{
+   height: 30%;
+    text-align: center;
+}
+.login-desc > p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.login-desc > h2{
+font-size: 20px;
+}
+
+.label-left{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 70%;
+}
+
+.btn-login {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 20%;
+    color:white;
+    background-color: #484848;
+    border-radius: 10px;
+}
+  
+.btn-login:disabled{
+    background-color: #4848484d;
+    
+}
+
+.btn-login:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+
+  .btn-login:active{
+      color: white;
+      background-color: black;
+  }
+
+
+@media (max-width:800px) {
+
+    .kotak-masuk{
+        width: 100%;
+        display: ruby-base-container;
+    }
+
+    .login-page{
+        background-color:#f3f3f3;
+        background-image: none;
+    }
+ 
+    
 }
