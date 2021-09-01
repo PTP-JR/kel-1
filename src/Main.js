@@ -23,9 +23,7 @@ return (
       <About />
     </Route>
     <Route path="/listData">
-      <div className="container">
         <ListData />
-      </div>
     </Route>
   </Switch>
 )
