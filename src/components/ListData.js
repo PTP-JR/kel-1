@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./ListData.css";
+import {Link} from 'react-router-dom';
 import loading3D from '../assets/angry.gif';
 
 const GET_API =
@@ -55,10 +56,10 @@ function ListData() {
       <h4>Genre: Family</h4>
      <dix className="social-share">
        <p>Share This: </p>
-     <a href="#" class="fa fa-facebook"></a>
-     <a href="#" class="fa fa-instagram"></a>
-     <a href="#" class="fa fa-twitter"></a>
-     <a href="#" class="fa fa-linkedin"></a>
+     <Link to="#" className="fa fa-facebook"></Link>
+     <Link to="#" className="fa fa-instagram"></Link>
+     <Link to="#" className="fa fa-twitter"></Link>
+     <Link to="#" className="fa fa-linkedin"></Link>
      </dix>
       <p>Overview: The Templeton brothers — Tim and his Boss Baby little bro Ted — 
         have become adults and drifted away from each other. But a new boss baby with
@@ -87,7 +88,7 @@ function ListData() {
               <div className="movies-container-box">
                 {movies.map((item) => (
                   <div className="movies-container">
-                    <img src={IMG_API + item.poster_path} />
+                    <img src={IMG_API + item.poster_path} alt="poster-path" />
                       <div className="movies-info">
                         <div className="movies-name">
                           <div>

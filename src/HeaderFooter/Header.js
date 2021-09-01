@@ -1,7 +1,6 @@
 import Logo from './assets/logo.png';
-import {Dropdown} from 'react-bootstrap';
-import {NavDropdown, Button, Navbar, Container, Nav} from 'react-bootstrap';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 

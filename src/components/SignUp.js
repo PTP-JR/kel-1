@@ -51,11 +51,11 @@ function SignUp() {
             
             <form className="form-signup">
             <div className="judul-tengah">
-                <h1>Welcome to The Movies</h1>
-                <h1>Registration your Account</h1>
+                <h2>Welcome to The Movies</h2>
+                <p>Registration Your Account</p>
             </div>
                 <div className="label-left">
-                    <label htmlFor="">First Name</label><br />
+                    <label htmlFor="">First Name:</label><br />
                     <input 
                         type="text" 
                         name="firstname" 
@@ -64,7 +64,7 @@ function SignUp() {
                         onChange={handleChangesignUp}
                     /><br />
 
-                    <label htmlFor="">Last Name</label><br />
+                    <label htmlFor="">Last Name:</label><br />
                     <input 
                         type="text" 
                         name="lastname" 
@@ -73,7 +73,7 @@ function SignUp() {
                         onChange={handleChangesignUp}
                     /><br />
 
-                    <label htmlFor="">Username</label><br />
+                    <label htmlFor="">Username:</label><br />
                     <input 
                         type="text" 
                         name="username" 
@@ -82,7 +82,7 @@ function SignUp() {
                         onChange={handleChangesignUp}
                     /><br />
 
-                    <label htmlFor="">Address Email</label><br />
+                    <label htmlFor="">Address Email:</label><br />
                     <input 
                         type="email" 
                         name="email" 
@@ -91,7 +91,7 @@ function SignUp() {
                         onChange={handleChangesignUp}
                     /><br />
 
-                    <label htmlFor="">Password</label><br />
+                    <label htmlFor="">Password:</label><br />
                     <input 
                         type="password" 
                         name="password" 
@@ -100,7 +100,7 @@ function SignUp() {
                         onChange={handleChangesignUp}
                     /><br />
 
-                    <label htmlFor="">Confirmed Password</label><br />
+                    <label htmlFor="">Confirmed Password:</label><br />
                     <input 
                         type="password" 
                         name="confirmedPassword" 
@@ -112,12 +112,12 @@ function SignUp() {
 
                 <button 
                     onClick={handleSubmitsignUp} 
-                    className="btn" 
+                    className="btn-signup" 
                     disabled={!validSignUp}
-                >Registration</button>
+                >Sign Up</button>
                 
                 <div className="sign-up-here">
-                    <p>Already have an account? <Link to="/login" id="link">Sign in here</Link></p>
+                    <p>Already have an account? <Link to="/login" id="link">Log in here</Link></p>
                 </div>
             </form>
 
