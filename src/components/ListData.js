@@ -72,7 +72,7 @@ function ListData() {
 
         <>
               <section className="fungsi-search">
-                <h1>New Release</h1>
+                <h2>New Release</h2>
                 <form onSubmit={handleOnSubmit}>
                   <input
                     type="text"

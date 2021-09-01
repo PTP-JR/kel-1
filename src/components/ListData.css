@@ -152,3 +152,7 @@ input {
     padding: 15%;
     text-align: center;
   }
+
+  .fungsi-search > h2 {
+    text-align: center;
+  }
