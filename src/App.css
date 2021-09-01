@@ -28,6 +28,16 @@ Footer{
   color: orange;
 }
 
+Footer > a {
+  color: white;
+  text-decoration: none;
+}
+
+Footer > a:hover{
+  color:orange;
+  text-decoration: none;
+}
+
 @media (max-width:600px) {
   Footer{
     font-size: 12px;
