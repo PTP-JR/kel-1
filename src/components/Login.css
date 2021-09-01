@@ -27,7 +27,7 @@ background-color: #666666;
 }
 
 .kotak-masuk{
-    padding: 8px;
+    padding: 20px;
     width: 50%;
     height: 70%;
     background-color:	#f3f3f3;
@@ -69,6 +69,13 @@ font-size: 20px;
 
     .kotak-masuk{
         width: 100%;
+        display: ruby-base-container;
     }
+
+    .login-page{
+        background-color:#f3f3f3;
+        background-image: none;
+    }
+ 
     
 }
