@@ -25,6 +25,7 @@ function SignUp() {
 
     const handleSubmitsignUp = (event) => {
         event.preventDefault();
+        localStorage.setItem("ListData", JSON.stringify(signUp));
         console.log(signUp);
         alert(`
             Your Data is \n 
@@ -47,8 +48,12 @@ function SignUp() {
 
     return (
         <div className="sign-up-form">
-        
-            <form>
+            
+            <form className="form-signup">
+            <div className="judul-tengah">
+                <h1>Welcome to The Movies</h1>
+                <h1>Registration your Account</h1>
+            </div>
                 <div className="label-left">
                     <label htmlFor="">First Name</label><br />
                     <input 
@@ -116,10 +121,6 @@ function SignUp() {
                 </div>
             </form>
 
-            <div>
-                <h1>Welcome to The Movies</h1>
-                <h1>Registration your Account</h1>
-            </div> 
         </div>
     )
 }
