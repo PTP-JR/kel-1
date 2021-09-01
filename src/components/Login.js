@@ -40,6 +40,7 @@ function Login() {
     }
 
     return (
+        <div className="login-page">
         <div className="kotak-masuk">
             <h1>Welcome to The Movies</h1>
             <form>
@@ -66,8 +67,9 @@ function Login() {
                 </div>
                
                 <button onClick={handleSubmit} className="btn" disabled={!validLogin()}>Enter</button>
-
+                <p>New User? <Link to="/sign-up">Sign Up</Link></p>
             </form>
+        </div>
         </div>
     )
 }

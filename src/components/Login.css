@@ -20,3 +20,18 @@ form {
     flex-wrap: wrap;
     align-content: center;  
 }
+
+.login-page{
+    width: 100%;
+    padding: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/src/assets/movies2.jpg");
+}
+
+.kotak-masuk{
+    width: 50%;
+    background-color: wheat;
+    margin: auto;
+    
+}
