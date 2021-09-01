@@ -37,7 +37,7 @@ function ListData() {
 
   return (
     <>
-
+<div className="listData">
     <section className="video">
     <div className="video-trailer">
     <iframe width="560" height="315" className="responsive-iframe" src="https://www.youtube.com/embed/EWizz52lZvw" 
@@ -97,6 +97,7 @@ function ListData() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </>
   );
