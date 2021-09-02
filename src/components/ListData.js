@@ -72,8 +72,6 @@ function ListData() {
           <img src={loading3D} className="loading" alt="Loading 3D Anime" />
         ) : (
           // { loading ? <h1 className="loading">Menunggu...</h1> : (
-
-          <>
             <section className="fungsi-search">
               <h2>New Release</h2>
               <form onSubmit={handleOnSubmit}>
@@ -87,38 +85,51 @@ function ListData() {
               </form>
             </section>
 
-              <div className="movies-container-box">
-                {movies.map((item) => (
-                  <div className="movies-container">
-                    <img src={IMG_API + item.poster_path} alt="poster-path" />
-                      <div className="movies-info">
-                        <div className="movies-name">
-                          <div>
-                            <p>{item.title}</p>
+
+
+          { loading ? <img src={loading3D} className="loading" alt="Loading 3D Anime" /> : (
+            // { loading ? <h1 className="loading">Menunggu...</h1> : (
+    <>
+                  <section className="fungsi-search">
+                    <h2>New Release</h2>
+                    <form onSubmit={handleOnSubmit}>
+                      <input
+                        type="text"
+                        placeholder="search"
+                        className="srch"
+                        value={cari}
+                        onChange={handleOnChange}
+                      />
+                    </form>
+                  </section >
+    
+                  <div className="movies-container-box">
+                    {movies.map((item) => (
+                      <div className="movies-container">
+                        <img src={IMG_API + item.poster_path} />
+                          <div className="movies-info">
+                            <div className="movies-name">
+                              <div>
+                                <p>{item.title}</p>
+                              </div>
+                              <div>
+                                <p>{item.vote_average}</p>
+                              </div>
+                            </div>
+                            {/* <p>Release date : {item.release_date}</p> */}
                           </div>
-                          <div>
-                            <p>{item.vote_average}</p>
+                          <div className="movies-overview">
+                            <h3>Overview :</h3>
+                            <p>{item.overview}</p>
                           </div>
-                        </div>
-                        {/* <p>Release date : {item.release_date}</p> */}
+                          </div>
                       </div>
-                      <div>
-                        <p>{item.vote_average}</p>
-                      </div>
-                    </div>
-                    {/* <p>Release date : {item.release_date}</p> */}
-                  </div>
-                  <div className="movies-overview">
-                    <h3>Overview :</h3>
-                    <p>{item.overview}</p>
+                      </>
+                    ))}
+</div>
                   </div>
                 </div>
-              ))}
-            </div>
-          </>
-        )}
-      </div>
-    </div>
+
   );
 }
 
