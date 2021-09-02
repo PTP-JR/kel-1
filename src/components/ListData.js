@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./ListData.css";
 import loading3D from '../assets/angry.gif';
+import moment from "moment";
 
 const GET_API =
   "https://api.themoviedb.org/3/discover/movie?api_key=1d29e799bb3728c10ef98df0f4ed823f&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate";
@@ -102,6 +103,8 @@ function ListData() {
                       <div className="movies-overview">
                         <h3>Overview :</h3>
                         <p>{item.overview}</p>
+                        <h3>Release date:</h3>
+                        <p>{moment(item.release_date).format('LL')}</p>
                       </div>
                   </div>
                 ))}
