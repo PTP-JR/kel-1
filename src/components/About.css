@@ -58,7 +58,7 @@
     text-align: center  ;
 }
 
-@media (max-width:532px) {
+@media (max-width:900px) {
     
     .carousel{
         width: 90%;
