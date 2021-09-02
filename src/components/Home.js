@@ -57,7 +57,11 @@ function Home(){
       className="video-section-2" type="video/mp4"/>
       </div>
     </div>
-<div className="section-3"></div>
+<div className="section-3">
+
+
+
+</div>
     </div>
     )
 }
