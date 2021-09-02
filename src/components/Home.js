@@ -21,12 +21,21 @@ function Home(){
       }, []);
 
     return (
+      <div className="home">
+        <section className="section-1">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" alt="video-background" src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4"/>
+
+
+
+        </section>
     <div className="movie-now-playing">
         <h3>Now Playing: </h3>
         <div className="now-playing-container">
     {playing.map((item) =>  (
         <NowPlaying {...item}/>
     ))}
+    </div>
     </div>
     </div>
     )
