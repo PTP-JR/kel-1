@@ -60,5 +60,8 @@
 
 @media (max-width:532px) {
     
-    
+    .carousel{
+        width: 90%;
+
+    }
 }
