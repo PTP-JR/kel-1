@@ -6,14 +6,14 @@ function Login() {
 
 const history = useHistory();
 
-  const [user, setUser] = useState([
+  const [user] = useState([
     {
       email: "user@kelompok1.com",
       password: "1234",
     },
     {
       email: "bagas",
-      password: "123",
+      password: "999",
     },
     {
       email: "aldi",

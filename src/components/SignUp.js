@@ -50,10 +50,10 @@ function SignUp() {
         <div className="sign-up-form">
             
             <form className="form-signup">
-            <div className="judul-tengah">
-                <h2>Welcome to The Movies</h2>
-                <p>Registration Your Account</p>
-            </div>
+                <div className="judul-tengah">
+                    <h2>Welcome to The Movies</h2>
+                    <p>Registration Your Account</p>
+                </div>
                 <div className="label-left">
                     <label htmlFor="">First Name:</label><br />
                     <input 
