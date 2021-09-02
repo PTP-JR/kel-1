@@ -33,7 +33,7 @@ function Home(){
     <div class="d-flex h-100 text-center align-items-center">
       <div class="w-100 text-white">
         <h1 class="display-3">WELCOME TO THE MOVIES</h1>
-        <p class="lead mb-0">Watch Latest Movie inside Here</p>
+        <p class="lead mb-0">Watch The Latest Movie Inside Here</p>
       </div>
     </div>
   </div>
