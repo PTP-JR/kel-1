@@ -1,0 +1,19 @@
+.now-playing-container{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.movie-now-playing{
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+
+.movie-now-playing > h3 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 18pz;
+    text-align: left;
+}
