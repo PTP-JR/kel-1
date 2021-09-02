@@ -6,7 +6,7 @@ import './Header.css';
 
 function Header(){
     return(
-<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <img src={Logo} className="logo" alt="logo-situs"/>
           <Navbar.Brand href="#home"><Link to="/" className="nama-logo" style={{ textDecoration: 'none' }}>THE MOVIES</Link></Navbar.Brand>

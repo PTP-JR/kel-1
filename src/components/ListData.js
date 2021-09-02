@@ -43,35 +43,42 @@ function ListData() {
   };
 
   return (
-    
-<div className="listData">
-    <section className="video">
-    <div className="video-trailer">
-    <iframe width="560" height="315" className="responsive-iframe" src="https://www.youtube.com/embed/EWizz52lZvw" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <section className="deskripsi-video">
-      <h2>The Baby Boss</h2>
-      <h4>Genre: Family</h4>
-     <dix className="social-share">
-       <p>Share This: </p>
-     <button class="fa fa-facebook"></button>
-     <button class="fa fa-instagram"></button>
-     <button class="fa fa-twitter"></button>
-     <button class="fa fa-linkedin"></button>
-     </dix>
-      <p>Overview: The Templeton brothers — Tim and his Boss Baby little bro Ted — 
-        have become adults and drifted away from each other. But a new boss baby with
-         a cutting-edge approach and a can-do attitude is about to bring them together 
-         again … and inspire a new family business.</p>
+          
+      <div className="listData">
+
+        <section className="video">
+          <div className="video-trailer">
+            <iframe 
+              width="560" height="315" className="responsive-iframe" 
+              src="https://www.youtube.com/embed/EWizz52lZvw" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; 
+              encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+
+          <section className="deskripsi-video">
+            <h2>The Baby Boss</h2>
+            <h4>Genre: Family</h4>
+            <dix className="social-share">
+              <p>Share This: </p>
+              <button class="fa fa-facebook"></button>
+              <button class="fa fa-instagram"></button>
+              <button class="fa fa-twitter"></button>
+              <button class="fa fa-linkedin"></button>
+            </dix>
+              <p>
+                Overview: The Templeton brothers — Tim and his Boss Baby little bro Ted — 
+                have become adults and drifted away from each other. But a new boss baby with
+                a cutting-edge approach and a can-do attitude is about to bring them together 
+                again … and inspire a new family business.
+              </p>
           </section>
-</section>
+        </section>
 
-      { loading ? <img src={loading3D} className="loading" alt="Loading 3D Anime" /> : (
-        // { loading ? <h1 className="loading">Menunggu...</h1> : (
-
-        <>
+        { loading ? <img src={loading3D} className="loading" alt="Loading 3D Anime" /> : (
+          
+          <>
               <section className="fungsi-search">
                 <h2>New Release</h2>
                 <form onSubmit={handleOnSubmit}>
@@ -109,9 +116,11 @@ function ListData() {
                   </div>
                 ))}
               </div>
-              </>
-            )}
-            </div>
+            </>
+
+          )}
+          
+      </div>
       
   );
 }
