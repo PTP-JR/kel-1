@@ -71,6 +71,11 @@ label{
       background-color: black;
   }
 
+  .btn-signup:disabled{
+    background-color: #4848484d;
+    
+}
+
   @media (max-width:600px) {
 
     .form-signup{
