@@ -102,6 +102,20 @@
     text-align: center;
 }
 
+.section-4 > h2{
+  color: black;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.section-4{
+  padding: 20px;
+  width: 90%;
+  background-color: white;
+  margin: auto;
+}
+
 @media (hover:none){
     .section-1 {
       background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
