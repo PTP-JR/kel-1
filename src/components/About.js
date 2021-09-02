@@ -3,11 +3,10 @@ import "./About.css";
 import aldi from "../assets/aldi.jpg";
 import moly from "../assets/moly.jpeg";
 import harcen from "../assets/harcen.JPG";
-import about from "../assets/about.jpg";
 import { Carousel } from "react-bootstrap";
 
 function About() {
-  const [bio, setBio] = useState([
+  const [bio] = useState([
     {
       name: "Aldi Milano",
       origin: "Bandung",

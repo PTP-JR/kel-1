@@ -1,0 +1,22 @@
+.link-navigasi{
+    color:white;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .link-navigasi:hover{
+    color:orange;
+    font-size: 18px;
+  }
+  
+  .logo{
+    width: 75px;
+    height: 75px;
+  }
+  
+  .nama-logo{
+    color:white;
+  }
+  .nama-logo:hover{
+    color: orange;
+  }

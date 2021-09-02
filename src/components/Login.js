@@ -3,7 +3,8 @@ import { useHistory, Link } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
-  const history = useHistory();
+
+const history = useHistory();
 
   const [user, setUser] = useState([
     {

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-
 import ListData from './components/ListData';
 import About from './components/About';
 import Login from './components/Login';
@@ -23,9 +22,7 @@ return (
       <About />
     </Route>
     <Route path="/listData">
-      <div className="container">
         <ListData />
-      </div>
     </Route>
   </Switch>
 )

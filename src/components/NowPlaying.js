@@ -1,4 +1,4 @@
-import moment from "moment";
+import './NowPlaying.css';
 const IMG_API = "https://image.tmdb.org/t/p/w1280";
 
 function NowPlaying({
@@ -9,17 +9,11 @@ function NowPlaying({
   poster_path,
 }) {
   return (
-    <>
+    <section className="now-playing-box">
       <div className="now-playing">
-        <img src={IMG_API + poster_path} />
-        <div className="movie-info">
-          <p>{title}</p>
-          <p>{vote_average}</p>
-          <p>{overview}</p>
-          <p>{moment(release_date).format('LL')}</p>
-        </div>
+        <img src={IMG_API + poster_path} className="poster-mv" alt="poster-mv" />
       </div>
-    </>
+    </section>
   );
 }
 

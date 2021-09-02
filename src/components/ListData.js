@@ -28,7 +28,7 @@ function ListData() {
   const handleOnSubmit = (e) => {
     e.preventDefault();
 
-    setLoading(true)
+    setLoading(true);
     fetch(SEARCH_API + cari)
       .then((response) => response.json())
       .then((data) => {
@@ -56,10 +56,10 @@ function ListData() {
       <h4>Genre: Family</h4>
      <dix className="social-share">
        <p>Share This: </p>
-     <a href="#" class="fa fa-facebook"></a>
-     <a href="#" class="fa fa-instagram"></a>
-     <a href="#" class="fa fa-twitter"></a>
-     <a href="#" class="fa fa-linkedin"></a>
+     <button class="fa fa-facebook"></button>
+     <button class="fa fa-instagram"></button>
+     <button class="fa fa-twitter"></button>
+     <button class="fa fa-linkedin"></button>
      </dix>
       <p>Overview: The Templeton brothers — Tim and his Boss Baby little bro Ted — 
         have become adults and drifted away from each other. But a new boss baby with
@@ -88,7 +88,7 @@ function ListData() {
               <div className="movies-container-box">
                 {movies.map((item) => (
                   <div className="movies-container">
-                    <img src={IMG_API + item.poster_path} />
+                    <img src={IMG_API + item.poster_path} alt="movie-poster"/>
                       <div className="movies-info">
                         <div className="movies-name">
                           <div>
@@ -113,7 +113,7 @@ function ListData() {
             )}
             </div>
       
-      );
+  );
 }
 
 export default ListData;
