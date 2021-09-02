@@ -103,6 +103,7 @@
 }
 
 .section-4 > h2{
+  margin-bottom: 20px;
   color: black;
   font-size: 30px;
   text-align: center;
@@ -114,6 +115,11 @@
   width: 90%;
   background-color: white;
   margin: auto;
+}
+
+.section-4 > h4{
+  font-size: 20px;
+  font-weight: thin;
 }
 
 @media (hover:none){

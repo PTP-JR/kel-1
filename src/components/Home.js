@@ -65,16 +65,16 @@ function Home(){
   <h2>FAQ Question</h2>
 <Accordion defaultActiveKey="0">
   <Accordion.Item eventKey="0">
-    <Accordion.Header><h4>What is the feature of website?</h4></Accordion.Header>
+    <Accordion.Header><p>What is the feature of website?</p></Accordion.Header>
     <Accordion.Body>
      <p>You can feel experience free watching movies on our website. You can search
-         the list of your favourite movies with the database that linked to TMDB</p>
+         the list of your favourite movies with the database that linked to themoviedb.org</p>
     </Accordion.Body>
   </Accordion.Item>
   <Accordion.Item eventKey="1">
-    <Accordion.Header><h3>How Long This Website Build?</h3></Accordion.Header>
+    <Accordion.Header><p>How long this website build?</p></Accordion.Header>
     <Accordion.Body>
-    This website has been build around less a week. First, we made javascript running on basic HTML
+    This website has been build less in a week. First, we made javascript running on basic HTML
      code. Then, we got styling this by bootstrap. We spend whole day building this. 
      Much appreciate if you like it. :)   
   
@@ -82,7 +82,7 @@ function Home(){
   </Accordion.Item>
 
   <Accordion.Item eventKey="2">
-    <Accordion.Header><h4>What are your goals</h4></Accordion.Header>
+    <Accordion.Header><p>What are your goals</p></Accordion.Header>
     <Accordion.Body>
     <p>Our goals is giving all the best that we can do and effort to passed the final exam.
     We are fast learner, so we tried all of our capability to building this. </p>
@@ -90,7 +90,7 @@ function Home(){
   </Accordion.Item>
 
   <Accordion.Item eventKey="3">
-    <Accordion.Header><h4>Who is your thanks for</h4></Accordion.Header>
+    <Accordion.Header><p>Who is your thanks for</p></Accordion.Header>
     <Accordion.Body>
     <p>Thanks to our mentor (kak Auzan, kak Luthfi and kak Thoriq), Jasa Raharja teams, 
     all of Skilvul Team (kak Valen, kak Pandu, kak Heri, kak Ulvy,) 
