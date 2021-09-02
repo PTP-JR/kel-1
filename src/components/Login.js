@@ -5,10 +5,24 @@ import './Login.css';
 function Login() {
     const history = useHistory()
     
-    const [user] = useState({
-        email: 'kelompok1@gmail.com',
-        password: 'kelompok1'
-    })
+    const [user, setUser] = useState([
+        {
+            email: 'kelompok1@gmail.com',
+            password: 'kelompok1',
+        },
+        {
+            email: 'bagas@kelompok1.com',
+            password: 'temanggung98',
+        },
+        {
+            email: 'moly@kelompok1.com',
+            password: 'palembang92',
+        },
+        {
+            email: 'aldi@kelompok1.com',
+            password: 'bandung95',
+        }
+    ]);
 
     const [dataLogin, setDataLogin] = useState({
         email: '',
@@ -26,8 +40,8 @@ function Login() {
         event.preventDefault()
         console.log(dataLogin);
 
-        if(dataLogin.email === user.email){
-            if(dataLogin.password === user.password){
+        if(dataLogin.email === user[[['0']]].email){
+            if(dataLogin.password === user[[['0']]].password){
                 history.push("/listData")
             }
         } else {
