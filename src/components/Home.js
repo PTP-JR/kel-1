@@ -26,7 +26,7 @@ function Home(){
       <div className="home">
         <section className="section-1">
         <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" 
+        <video playsinline="playsinline" autoPlay muted loop 
         alt="video-background" src={videoBackground}
         type="video/mp4"/>
   <div class="container h-100">
