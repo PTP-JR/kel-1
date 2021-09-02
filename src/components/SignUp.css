@@ -50,7 +50,7 @@ label{
 .btn-signup {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 20%;
+    width: 30%;
     color:white;
     background-color: #484848;
     border-radius: 10px;
@@ -74,20 +74,28 @@ label{
   @media (max-width:600px) {
 
     .form-signup{
-            width: 100%;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
         }
     
         .login-page{
+            width: 100%;
             background-color:#f3f3f3;
             background-image: none;
         }
     
-        .btn-login{
-            width: 30%;
+        .btn-signup{
+            max-width: 30%;
         }
         .sign-up-form{
+            padding: 0;
             background: none;
             background-color:#f3f3f3;
 
         }
+        .label-left {
+            padding: 0;
+        }
     }
+
