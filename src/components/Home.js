@@ -32,7 +32,7 @@ function Home(){
   <div class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
       <div class="w-100 text-white">
-        <h1 class="display-3">Welcome to THE MOVIES</h1>
+        <h1 class="display-3">WELCOME TO THE MOVIES</h1>
         <p class="lead mb-0">Watch Latest Movie inside Here</p>
       </div>
     </div>
@@ -49,11 +49,11 @@ function Home(){
 
     <div className="section-2">
       <div className="text-section-2">
-        <h3>Feel the experience</h3>
+        <h3>FEELING EXPERIENCE</h3>
         <p>Watching movies through screen</p>
       </div>
       <div className="pic-section-2">
-      <video playsInline autoPlay loop src={videoSection2} alt="video-section-2" 
+      <video autoPlay loop src={videoSection2} alt="video-section-2" 
       className="video-section-2" type="video/mp4"/>
       </div>
     </div>
