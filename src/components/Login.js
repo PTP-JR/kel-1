@@ -5,7 +5,7 @@ import './Login.css';
 function Login() {
     const history = useHistory()
     
-    const [user, setUser] = useState([
+    const [user] = useState([
         {
             email: 'kelompok1@gmail.com',
             password: 'kelompok1',

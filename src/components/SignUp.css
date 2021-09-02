@@ -22,9 +22,18 @@
     text-align: center;
 }
 
+.judul-tengah > h2{
+    font-size: 20px;
+}
+
+.judul-tengah > p{
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .form-signup {
     padding: 20px;
-    width: 50%;
+    width: 70%;
     height: 70%;
     background-color:	#f3f3f3;
     margin: auto;
@@ -32,3 +41,61 @@
     flex-direction: column;
     border-radius: 20px;
 }
+
+label{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.btn-signup {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    color:white;
+    background-color: #484848;
+    border-radius: 10px;
+}
+  
+.btn-signup:disabled{
+    background-color: #4848484d;
+    
+}
+
+.btn-signup:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+
+  .btn-signup:active{
+      color: white;
+      background-color: black;
+  }
+
+  @media (max-width:600px) {
+
+    .form-signup{
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .login-page{
+            width: 100%;
+            background-color:#f3f3f3;
+            background-image: none;
+        }
+    
+        .btn-signup{
+            max-width: 30%;
+        }
+        .sign-up-form{
+            padding: 0;
+            background: none;
+            background-color:#f3f3f3;
+
+        }
+        .label-left {
+            padding: 0;
+        }
+    }
+
