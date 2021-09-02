@@ -36,8 +36,8 @@ function Home(){
       </div>
     </div>
   </div>
-
-
+<div className="section-2"></div>
+<div className="section-3"></div>
 
         </section>
     <div className="movie-now-playing">
