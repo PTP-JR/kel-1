@@ -93,7 +93,7 @@ function Home(){
     <Accordion.Header><p>Who is your thanks for</p></Accordion.Header>
     <Accordion.Body>
     <p>Thanks to our mentor (kak Auzan, kak Luthfi and kak Thoriq), Jasa Raharja teams, 
-    all of Skilvul Team (kak Valen, kak Pandu, kak Heri, kak Ulvy,) 
+    all of Skilvul Team (kak Valen, kak Pandu, kak Heri, kak Ulvy) 
     and many more for the chances that gave to us. This website may become a little gift from us.
     Hope you like it. </p>
     </Accordion.Body>
