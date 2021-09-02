@@ -89,7 +89,7 @@ font-size: 20px;
 @media (max-width:800px) {
 
     .kotak-masuk{
-        width: 100%;
+        width: 90%;
         display: ruby-base-container;
     }
 

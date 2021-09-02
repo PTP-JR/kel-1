@@ -1,6 +1,5 @@
 import Header from './HeaderFooter/Header';
 import Footer from './HeaderFooter/Footer';
-import {Link} from 'react-router-dom';
 import Main from './Main.js';
 import './App.css';
 
