@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import NowPlaying from './NowPlaying';
 import './Home.css';
 import videoBackground from '../assets/video1.mp4';
+import videoSection2 from '../assets/video2.mp4';
 
 const API_NOWPLAYING = "https://api.themoviedb.org/3/movie/now_playing?api_key=1d29e799bb3728c10ef98df0f4ed823f&language=en-US&page=2"
 
@@ -25,20 +26,17 @@ function Home(){
       <div className="home">
         <section className="section-1">
         <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" 
+        <video playsinline="playsinline" autoPlay muted loop 
         alt="video-background" src={videoBackground}
         type="video/mp4"/>
   <div class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
       <div class="w-100 text-white">
-        <h1 class="display-3">Welcome to THE MOVIES</h1>
+        <h1 class="display-3">WELCOME TO THE MOVIES</h1>
         <p class="lead mb-0">Watch Latest Movie inside Here</p>
       </div>
     </div>
   </div>
-<div className="section-2"></div>
-<div className="section-3"></div>
-
         </section>
     <div className="movie-now-playing">
         <h3>Now Playing: </h3>
@@ -48,6 +46,22 @@ function Home(){
     ))}
     </div>
     </div>
+
+    <div className="section-2">
+      <div className="text-section-2">
+        <h3>FEELING EXPERIENCE</h3>
+        <p>Watching movies through screen</p>
+      </div>
+      <div className="pic-section-2">
+      <video autoPlay loop src={videoSection2} alt="video-section-2" 
+      className="video-section-2" type="video/mp4"/>
+      </div>
+    </div>
+<div className="section-3">
+
+
+
+</div>
     </div>
     )
 }
