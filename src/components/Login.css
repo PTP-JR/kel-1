@@ -99,8 +99,29 @@ form {
     }
 
     .btn-login{
-        width: 30%;
+        width: 100%;
+        padding: 3px;
     }
- 
+
+    .kotak-masuk{
+        padding: 20px;
+        width: 100%;
+        height: 70%;
+        background-color:	#f3f3f3;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
     
+    .label-left{
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
 }
