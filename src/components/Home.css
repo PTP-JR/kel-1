@@ -125,7 +125,7 @@
 
 @media (hover:none){
     .section-1 {
-      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+      background: url('../assets/video1.mp4') black no-repeat center center scroll;
     }
   
     .section-1 video {
