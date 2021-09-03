@@ -7,10 +7,11 @@ import videoBackground from '../assets/video1.mp4';
 import videoSection2 from '../assets/video2.mp4';
 import { Accordion } from 'react-bootstrap';
 
+
 const API_NOWPLAYING = "https://api.themoviedb.org/3/movie/now_playing?api_key=1d29e799bb3728c10ef98df0f4ed823f&language=en-US&page=2"
 
 function Home(){
-
+ 
     const [playing, setPlaying] = useState([])
 
     useEffect(() => {
@@ -77,9 +78,9 @@ function Home(){
         <div className="section-4">
           <h2>FAQ Question</h2>
 
-            <Accordion defaultActiveKey="0">
+            <Accordion>
               <Accordion.Item eventKey="0">
-                <Accordion.Header>
+                <Accordion.Header className="button-accordion">
                   <p>What is the feature of website?</p>
                 </Accordion.Header>
                 <Accordion.Body>
@@ -91,7 +92,7 @@ function Home(){
               </Accordion.Item>
 
               <Accordion.Item eventKey="1">
-                <Accordion.Header>
+                <Accordion.Header className="button-accordion">
                   <p>How long this website build?</p>
                 </Accordion.Header>
                 <Accordion.Body>
@@ -104,7 +105,7 @@ function Home(){
               </Accordion.Item>
 
               <Accordion.Item eventKey="2">
-                <Accordion.Header>
+                <Accordion.Header className="button-accordion">
                   <p>What are your goals?</p>
                 </Accordion.Header>
                 <Accordion.Body>
@@ -116,7 +117,7 @@ function Home(){
               </Accordion.Item>
 
               <Accordion.Item eventKey="3">
-                <Accordion.Header>
+                <Accordion.Header className="button-accordion">
                   <p>Who is your thanks for?</p>
                 </Accordion.Header>
                 <Accordion.Body>
