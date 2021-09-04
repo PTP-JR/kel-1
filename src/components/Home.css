@@ -166,6 +166,6 @@
   }
 
 .section-1{
-  background: url('../assets/video1.mp4') black no-repeat center center scroll; 
+  background: url('../assets/video1.mp4') rgba(0, 0, 0, 0.356) no-repeat center center scroll; 
 }
 }
