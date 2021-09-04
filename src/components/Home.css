@@ -122,9 +122,9 @@
 }
 
 
-@media (hover:none){
+@media (pointer:coarse) and (hover:none){
     .section-1 {
-      background: url('../assets/video1.mp4') no-repeat center center scroll;
+      background: url('../assets/video1.mp4') black no-repeat center center scroll;
     }
   
     .section-1 video {
@@ -165,5 +165,7 @@
     margin: 1rem auto 1rem auto;
   }
 
-
+.section-1{
+  background: url('../assets/video1.mp4') black no-repeat center center scroll; 
+}
 }
